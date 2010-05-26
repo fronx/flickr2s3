@@ -1,0 +1,9 @@
+<h1>hey</h1>
+<div class="photos">
+  photos
+  <ul>
+  <% @photos.each do |p| %>
+    <li><a href="<%= p.download_url %>"><%= p.title %></a></li>
+  <% end %>
+  </ul>
+</div>
